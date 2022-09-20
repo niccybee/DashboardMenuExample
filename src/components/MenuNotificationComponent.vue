@@ -1,6 +1,6 @@
 <script setup>
-import { useMainStore } from '../stores/MainStore';
-const store = useMainStore();
+import { useNotificationStore } from '../stores/NotificationStore';
+const store = useNotificationStore();
 let thisThing = 'I am a thing';
 </script>
 <template>

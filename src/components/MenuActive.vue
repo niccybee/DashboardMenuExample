@@ -5,8 +5,9 @@ const item = useMenuStore();
 </script>
 <template>
   <div
+    v-if="item.activeItem"
     @click="item.clearActive(item)"
-    class="z-0 bg-green-100 w-full h-full absolute top-18 left-0"
+    class="z-0 bg-yellow-500 w-full h-full absolute top-0 left-0 op-2"
   ></div>
   <div
     v-if="item.activeItem"

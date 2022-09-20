@@ -18,7 +18,7 @@ const helpArticles = [
     >
       <div>
         <input
-          class="w-full py-2 rounded-md border-1 border-solid"
+          class="max-w-full w-full p-2 rounded-md border-1 border-solid"
           type="text"
           placeholder="Search for help topic"
         />

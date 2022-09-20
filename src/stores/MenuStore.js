@@ -16,14 +16,8 @@ export const useMenuStore = defineStore('menu', {
         text: '',
         active: false,
         menuClass: 'w-screen poop',
-        body: `        <span
-          class="
-            outline-red-500
-            bg-blue-500
-            text-white
-            flex
-            items-center
-            justify-center
+        body: `<span
+          class="outline-red-500 bg-blue-500 text-white flex items-center justify-center
             px-8
             py-2
             rounded-md
