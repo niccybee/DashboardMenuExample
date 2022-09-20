@@ -2,6 +2,9 @@ import { defineStore } from 'pinia';
 import MenuHelpComponent from '../components/MenuHelpComponent.vue';
 import MenuHowToUseComponent from '../components/MenuHowToUseComponent.vue';
 import MenuStudentsOnline from '../components/MenuStudentsOnline.vue';
+import MenuNotificationComponent from '../components/MenuNotificationComponent.vue';
+import MenuSettingsComponent from '../components/MenuSettingsComponent.vue';
+import MenuProfileComponent from '../components/MenuProfileComponent.vue';
 
 export const useMenuStore = defineStore('menu', {
   state: () => ({
@@ -12,6 +15,7 @@ export const useMenuStore = defineStore('menu', {
       {
         text: '',
         active: false,
+        menuClass: 'w-screen poop',
         body: `        <span
           class="
             outline-red-500
@@ -68,18 +72,21 @@ export const useMenuStore = defineStore('menu', {
         active: false,
         body: '',
         link: 'https://google.com',
+        component: MenuSettingsComponent,
       },
       {
         text: '🔔',
         active: false,
         body: '',
         link: 'https://google.com',
+        component: MenuNotificationComponent,
       },
       {
         text: '🙋',
         active: false,
         body: '',
         link: 'https://google.com',
+        component: MenuProfileComponent,
       },
     ],
   }),

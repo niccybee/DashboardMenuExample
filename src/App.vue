@@ -11,7 +11,7 @@ import DebugMenu from './components/DebugMenu.vue';
   <div><TopBanner /></div>
   <!-- <div class="bg-black w-screen"><MenuList /></div> -->
   <HelloWorld msg="Vite + Vue" />
-  <DebugMenu />
+  <!-- <DebugMenu /> -->
 </template>
 
 <style scoped>

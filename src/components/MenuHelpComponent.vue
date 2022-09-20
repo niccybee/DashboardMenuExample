@@ -25,7 +25,16 @@ const helpArticles = [
       </div>
       <div
         v-for="h in helpArticles"
-        class="py-2 bg-white hover:bg-blue-100 cursor-pointer rounded-md my-1"
+        class="
+          py-2
+          bg-white
+          hover:bg-blue-100
+          shadow-sm
+          cursor-pointer
+          rounded-md
+          my-1
+          text-gray-600
+        "
       >
         {{ h.title }}
       </div>
