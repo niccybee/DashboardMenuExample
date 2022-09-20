@@ -1,14 +1,6 @@
 <script setup>
-const helpArticles = [
-  {
-    title: 'How to watch lectures',
-    link: 'google.com/s/how',
-  },
-  {
-    title: 'How upgrade account',
-    link: 'google.com/s/upgrade',
-  },
-];
+import { usehelpStore } from '../stores/HelpStore';
+const kb = useHelpStore();
 </script>
 <template>
   <div>
@@ -24,7 +16,7 @@ const helpArticles = [
         />
       </div>
       <div
-        v-for="h in helpArticles"
+        v-for="h in kb"
         class="
           py-2
           bg-white
