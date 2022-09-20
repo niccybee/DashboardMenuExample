@@ -4,12 +4,14 @@
 import HelloWorld from './components/HelloWorld.vue';
 // import MenuList from './components/MenuList.vue';
 import TopBanner from './components/TopBanner.vue';
+import DebugMenu from './components/DebugMenu.vue';
 </script>
 
 <template>
   <div><TopBanner /></div>
   <!-- <div class="bg-black w-screen"><MenuList /></div> -->
   <HelloWorld msg="Vite + Vue" />
+  <DebugMenu />
 </template>
 
 <style scoped>

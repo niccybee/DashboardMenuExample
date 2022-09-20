@@ -1,12 +1,10 @@
 <script setup>
 import MenuItem from './MenuItem.vue';
-import useStoreAsRefs from 'pinia';
 import { useMenuStore } from '../stores/MenuStore';
 
-const { menu, setActive } = useMenuStore();
+const menu = useMenuStore();
 </script>
 <template>
-  <!-- {{ menu.length }} -->
   <nav
     class="
       flex
@@ -19,8 +17,10 @@ const { menu, setActive } = useMenuStore();
       hover:text-gray-100
     "
   >
-    <MenuItem v-for="item in menu" @click="setActive(item)">
-      <span v-html="item.body"></span><span>{{ item.text }}</span>
+    <!-- @blur="menu.clearActive(item)" -->
+    <MenuItem v-for="item in menu.menu" @click="menu.setActive(item)">
+      <div v-html="item.body"></div>
+      <span>{{ item.text }}</span>
     </MenuItem>
   </nav>
 </template>

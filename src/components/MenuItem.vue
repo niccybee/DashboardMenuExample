@@ -1,4 +1,5 @@
 <script setup>
+import MenuActive from './MenuActive.vue';
 const props = defineProps({
   text: String,
 });
@@ -18,6 +19,6 @@ const props = defineProps({
     "
   >
     <slot></slot>
-    <span v-if="text">{{ props.text }}</span>
+    <!-- <span v-if="props.text">{{ props.text }}</span> -->
   </a>
 </template>
